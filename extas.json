@@ -1,0 +1,31 @@
+{
+  "name": "extas/tags",
+  "repositories": [
+    {
+      "name": "tags",
+      "scope": "extas",
+      "pk": "name",
+      "class": "extas\\components\\tags\\Tag",
+      "aliases": ["tags"]
+    },
+    {
+      "name": "tag_maps",
+      "scope": "extas",
+      "pk": "name",
+      "class": "extas\\components\\tags\\TagMap",
+      "aliases": ["tagMaps", "tag_maps"]
+    }
+  ],
+  "plugins_install": [
+    {
+      "repository": "tags",
+      "name": "tag",
+      "section": "tags"
+    },
+    {
+      "repository": "tagMaps",
+      "name": "tag map",
+      "section": "tag_maps"
+    }
+  ]
+}
